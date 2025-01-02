@@ -2,12 +2,11 @@
   "name": "todo",
   "version": "1.0.0",
   "main": "./lib/index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts",
+    "start": "ts-node src/index.ts",
     "build": "tsc",
-    "dev": "nodemon --exec ts-node index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build"
   },
@@ -22,6 +21,8 @@
     "mongoose": "^8.9.2"
   },
   "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.3",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "tslint": "^5.20.1",
